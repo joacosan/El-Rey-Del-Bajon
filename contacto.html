@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>El Rey del Bajon</title>
+</head>
+
+<body class="bodycontact">
+    <!------HEADER------->
+    <header>
+        <!----------NAVBAR-------->
+        <nav class="navbar navbar-expand-sm bg-danger navbar-dark fixed-top">
+            <div class="container">
+                <a href="index.html" class="navbar-brand">
+                    El Rey del Bajon <i class="fas fa-crown"></i>
+                </a>
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav ml-auto ">
+                        <li class="nav-item mx-auto">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item mx-auto">
+                            <a class="nav-link" href="nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item mx-auto">
+                            <a class="nav-link" href="galeria.html">Galeria</a>
+                        </li>
+                        <li class="nav-item mx-auto">
+                            <a class="nav-link" href="menu.html">Menu</a>
+                        </li>
+                        <li class="nav-item active mx-auto">
+                            <a class="nav-link" href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!------FIN NAVBAR------->
+    </header>
+    <!------FIN HEADER------->
+
+    <!----------MAIN--------->
+    <main class="main">
+        <article>
+            <div class="container">
+                <section class="row">
+                    <div class="col-md-7">
+                        <h1 class="text-left h1contact">Formulario de Contacto: </h1>
+                        <p class="txtcontact">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet similique,
+                            ratione non natus
+                            voluptatum perferendis, harum sint dignissimos accusamus dolor voluptates enim doloremque
+                            incidunt.</p>
+                    </div>
+                    <div class="col-md-5">
+                        <form action="" id="formContact">
+                            <div class="row border-bottom">
+                                <div class="col-md-6">
+                                    <h3 class="text-left h3contact">
+                                        Formulario de Contacto
+                                    </h3>
+                                </div>
+                                <div class="col-md-6">
+                                    <span class="pencil"><i class="fas fa-pencil-alt"></i></span>
+                                </div>
+                                <br>
+                            </div>
+                            <div class="row mt-3">
+                                <label for="" class="label col-md-2 control-label">Nombre</label>
+                                <div class="col-md-10">
+                                    <input type="text" class="form-control form-input-nombre" name="name"
+                                        placeholder="Nombre y Apellido">
+                                </div>
+                            </div>
+                            <div class="row mt-3">
+                                <label for="" class="label col-md-2 control-label">Asunto</label>
+                                <div class="col-md-10">
+                                    <input type="text" class="form-control form-input-asunto" name="Email"
+                                        placeholder="Asunto">
+                                </div>
+                            </div>
+                            <div class="row mt-3">
+                                <label for="" class="label col-md-2 control-label">E-mail</label>
+                                <div class="col-md-10">
+                                    <input type="email" class="form-control form-input-correo" name="Email"
+                                        placeholder="E-mail" required>
+                                </div>
+                            </div>
+                            <div class="row mt-3">
+                                <label for="" class="label col-md-2 control-label">Mensaje</label>
+                                <div class="col-md-10">
+                                    <textarea class="form-control form-input-mensaje"
+                                        placeholder="Pida su reservación,envie su mensaje, queja o sugerencia."></textarea>
+                                </div>
+                            </div>
+                            <div class="row mt-3 d-flex justify-content-center">
+                                <div class="form-group">
+                                    <div class="col-md-12">
+                                        <label for="captcha" class="label  text-center">¿ Eres un humano ?<span
+                                                id="btnRefresh"><i class="fas fa-redo-alt"></i></span></label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row d-flex justify-content-center">
+                                <div class="form-group">
+                                    <div class="col-md-12">
+                                        <p id="parrafopregunta" class="text-light"></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row d-flex justify-content-center m-4">
+                                <div class="col-xs-8">
+                                    <input type="text" name="captcha" id="captcha"
+                                        class="form-control form-input-captcha">
+                                </div>
+                                <div class="col-xs-4">
+                                    <input type="submit" id="btn-enviar" class="btn btn-outline-danger ml-4"
+                                        value="Enviar">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </section>
+            </div>
+        </article>
+    </main>
+    <!------FIN MAIN------->
+    <!-- Footer -->
+    <footer>
+        <div class="container-fluid bg-dark p-5 mt-4">
+            <div class="row">
+                <div class="col-3 col-md-4 title-footer">
+                    <h5 class="text-uppercase text-light">El Rey del Bajon <i class="fas fa-crown"></i></h5>
+                </div>
+                <div class="col-3 col-md-4 text-center">
+                    <!-- Links -->
+                    <h5 class="text-uppercase text-center text-light title-footer"></h5>
+
+                    <ul class="list-footer title-footer">
+                        <li class="liFooter">
+                            <a href="#!"><i class="fab fa-facebook-square faceLi icons-color"></i></a>
+                        </li>
+                        <li class="liFooter">
+                            <a href="#!"><i class="fab fa-twitter-square twLi icons-color"></i></a>
+                        </li>
+                        <li class="liFooter">
+                            <a href="#!"><i class="fab fa-instagram igLi icons-color"></i></a>
+                        </li>
+                        <li class="liFooter">
+                            <a href="#!"><i class="fas fa-envelope mailLi icons-color"></i></a>
+                        </li>
+                        <li class="liFooter">
+                            <a href="#!"><i class="fas fa-phone phoneLi icons-color"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Copyright -->
+        <div class="footer-copyright text-center text-light py-2 bg-dark">© 2019 Copyright:
+            <a href="index.html">ElreydelBajon.com</a>
+        </div>
+        <!-- Copyright -->
+
+    </footer>
+    <!-- Footer -->
+
+    <!--script boostrap 4-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+    <!--Main.js -->
+    <script src="js/main.js"></script>
+    <!--Captcha-->
+    <script src="js/captcha.js"></script>
+</body>
+
+</html>
